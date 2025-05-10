@@ -16,7 +16,7 @@ interface Graduate {
   portfolioUrl?: string;
 }
 
-const API_URL = 'https://employer-portal-api.onrender.com/graduates';
+const API_URL = `${import.meta.env.VITE_API_URL}/graduates`;
 
 function App() {
   const [graduates, setGraduates] = useState<Graduate[]>([]);
