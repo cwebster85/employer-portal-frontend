@@ -1,0 +1,269 @@
+/* Layout */
+body {
+    background: #f8f9fa;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 0.25rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/*  Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* Form */
+.form-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+.form-card h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-grid input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+.form-grid label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+/* Buttons */
+.button-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #0056b3;
+}
+
+.button-secondary {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button-secondary:hover {
+    background-color: #f5c6cb;
+}
+
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.edit-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    bottom: 10px;
+    right: 10px;
+    transform: scaleX(-1);
+    background: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+}
+
+.delete-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    top: 10px;
+    right: 10px;
+    background: #ffeef0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    color: #a71d2a;
+}
+
+/* Graduate Cards */
+.section-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.graduate-card {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.graduate-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.graduate-card p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.graduate-card a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.card-actions {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+/* Chip Input */
+.chip-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.chip-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+.chip {
+    background: #e0e7ff;
+    color: #1e3a8a;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.chip button {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #1e3a8a;
+}
