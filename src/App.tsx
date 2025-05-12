@@ -63,7 +63,7 @@ function App() {
 
     const payload = {
       ...form,
-      portfolioUrl: trimmedUrl || undefined,
+      portfolioUrl: trimmedUrl === '' ? null : trimmedUrl,
     };
 
 
